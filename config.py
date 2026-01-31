@@ -1,0 +1,2 @@
+DATABASE = "portfolio.db"
+Token = ""
