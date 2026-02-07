@@ -1,6 +1,25 @@
 import sqlite3
 from config import DATABASE
 
+# Подключение к базе данных
+#conn = sqlite3.connect('portfolio.db')
+#cursor = conn.cursor()
+
+# Название таблицы
+#table_name = 'project_skills'
+
+# Название нового столбца и его тип данных
+#new_column_name = 'Photo'
+#new_column_type = 'TEXT'
+
+# Выполнение запроса на добавление столбца
+#alter_query = f"ALTER TABLE {table_name} ADD COLUMN {new_column_name} {new_column_type}"
+#cursor.execute(alter_query)
+
+# Сохранение изменений и закрытие соединения
+#conn.commit()
+#qconn.close()
+
 skills = [ (_,) for _ in (['Python', 'SQL', 'API', 'Telegram'])]
 statuses = [ (_,) for _ in (['На этапе проектирования', 'В процессе разработки', 'Разработан. Готов к использованию.', 'Обновлен', 'Завершен. Не поддерживается'])]
 
@@ -141,7 +160,6 @@ if __name__ == '__main__':
     manager = DB_Manager(DATABASE)
     #manager.create_tables()
     #manager.default_insert()
-    manager.insert_project([(1, "Проект №1", "https://github.com/Kirillitha/M2L2", 1)])
+    #manager.insert_project([(1, "Проект №1", "https://github.com/Kirillitha/M2L2", 1)])
 
-    
     
